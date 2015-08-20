@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-        <title>Battlship</title>
+        <title>Battleship</title>
         <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
@@ -108,15 +108,18 @@
 
 	   </table>
        <p>
-           Ships remaining: <span class="ships_rem"></span>
+           Ships Remaining: <span class="ships_rem"></span>
        </p>
        <p>
-           Shots remaining: <span class="shots_rem"></span>
+           Shots Remaining: <span class="shots_rem"></span>
        </p>
 
-       Row: <input type="text" name="name" value="">
-      umn: <input type="text" name="name" value="">
-       <button type="button" name="shoot">Fire</button>
+       Row (1-8): <input type="text" name="name" value="" id="rowBox">
+       Column (A-H): <input type="text" name="name" value="" id="colBox">
+       <button type="button" name="shoot" id="fire">Fire</button>
+       <br>
+       <br>
+       <span id="winLoseText"></span>
 
        <script type="text/javascript" src="js/battleship.js"> </script>
        <script type="text/javascript" src="js/main.js">
